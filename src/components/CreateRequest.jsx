@@ -117,7 +117,7 @@ const CreateRequest = props => {
       <>
         <input
           id='addressInput'
-          onChange={onChangeHandler.bind(this)}
+          onBlur={onChangeHandler.bind(this)}
           placeholder='write something here'
         ></input>
         <button id='addressConfirm' onClick={getCoordsFromAddress.bind(this)}>

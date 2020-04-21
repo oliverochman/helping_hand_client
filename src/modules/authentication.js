@@ -28,6 +28,7 @@ const onLogin = (event, dispatch) => {
       });
     })
     .catch((error) => {
+      debugger;
       dispatch({ type: "GREETING", payload: error.response.data.errors });
     });
 };
